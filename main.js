@@ -11,7 +11,13 @@
 // let arr = getLevel2(5)
 // console.log(arr);
 
+
+
+
 // Array 2
+
+
+
 
 // function generateSequence(n, A, B) {
     
@@ -30,7 +36,14 @@
 // console.log(output);
 
 
+
+
+
 // Array 3
+
+
+
+
 
     // let arr = [4, 7, 2, 9, 1];
         
@@ -43,7 +56,13 @@
 // }
 
 
+
+
 // Array 4
+
+
+
+
 
 // function findOdds(arr) {
 //   let  odds = arr.filter(element => element % 2 !== 0);
@@ -59,7 +78,12 @@
 // findOdds(elements);
 
 
+
+
+
 // Array 5
+
+
 
 
 // function findOdds(arr) {
@@ -76,7 +100,13 @@
 
 
 
+
+
 // Array 6
+
+
+
+
 
 // function array(arr) {
 //   for (let i = 0; i < arr.length; i += 2) {
@@ -89,7 +119,13 @@
 // array(myArray);
 
 
+
+
+
 // Array 7
+
+
+
 
 
 // function array(arr) {
@@ -103,7 +139,15 @@
 // array(myArray);
 
 
+
+
+
+
 // Array 8
+
+
+
+
 
 // function array (arr) {
 //     for (let i=0; i<=arr.length ; i+=2){
@@ -118,7 +162,15 @@
 
 // array(myArray);
 
+
+
+
+
 // Array 9
+
+
+
+
 
 // function array (arr) {
 //     for (let i=1; i<arr.length ; i+=2){
@@ -140,6 +192,9 @@
 // Array 10
 
 
+
+
+
 // function printCustomPattern(arr) {
 //   let n = arr.length;
 
@@ -156,7 +211,16 @@
 
 // printCustomPattern(myArray);
 
+
+
+
+
 // Array 11
+
+
+
+
+
 
 // let K =1;
 // let L =4;
@@ -176,7 +240,15 @@
 // rangeOutSum(myarray=[1, 2, 3, 4, 5, 6, 7, 8, 9])
 
 
+
+
+
+
 // Array 12
+
+
+
+
 
 
 // function separateTruthyFalsy(arr){
@@ -199,7 +271,20 @@
 // separateTruthyFalsy(inputArray);
 
 
+
+
+
+
+
+
 // Array 13
+
+
+
+
+
+
+
 
 // function getOddMin(arr){
 //     let min = arr[0];
@@ -239,7 +324,21 @@
 // console.log(max);
 
 
+
+
+
+
+
+
+
+
 // Array 15
+
+
+
+
+
+
 
 // function getOddMin(arr){
 //     let max = arr[0];
@@ -257,7 +356,19 @@
 // let max = getOddMin(inputArray)
 
 
+
+
+
+
+
+
 // Array 16
+
+
+
+
+
+
 
 
 /*// function getOddMin(arr){
@@ -418,6 +529,57 @@
 
 // Array 20
 
+
+
+
+// function createEvenArray(a) {
+//     let b = [];
+    
+//     for (let i = 0; i < a.length; i++) {
+//         if (a[i] % 2 === 0) {
+//             b.push(a[i]);
+//         }
+//     }
+
+//     return b;
+// }
+
+// let a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// let b = createEvenArray(a);
+
+// console.log(`Juft elementlar soni: `+ b.length);
+// console.log(`Juft elementlar: ` +b );
+
+
+
+
+
+
+// Array 21
+
+
+// function createEvenArray(a) {
+//     let b = [];
+//     let k = 2;
+    
+//     for (let i = 0; i < a.length; i++) {
+//             b.push(a[i]*k);
+//     }
+
+//     return b;
+// }
+
+// let a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// let b = createEvenArray(a);
+
+// console.log(`k ga orttirilgan massiv elementlari: ` +b );
+
+
+
+
+// Array 22
 
 
 
