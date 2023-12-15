@@ -321,34 +321,32 @@
 // Array 17
 
 
+// function findMax2(arr) {
+//     if (arr.length < 2) {
+//         return undefined; 
+//     }
 
-function findClosestToR(arr, R) {
-    if (arr.length === 0) {
-        return undefined; 
-    }
+//     let max1 = arr[0] + arr[1]; 
+//     let max2 = [arr[0], arr[1]]; 
 
-    let closest = arr[0]; 
-    let minDifference = Math.abs(R - arr[0]); 
+//     for (let i = 1; i < arr.length - 1; i++) {
+//         let currentSum = arr[i] + arr[i + 1];
 
-    for (let i = 1; i < arr.length; i++) {
-        let currentDifference = Math.abs(R - arr[i]);
+//         if (currentSum > max1) {
+//             max1 = currentSum;
+//             max2 = [arr[i], arr[i + 1]];
+//         }
+//     }
 
-        if (currentDifference < minDifference) {
-            minDifference = currentDifference;
-            closest = arr[i];
-        }
-    }
+//     return max2;
+// }
 
-    return closest;
-}
+// let inputArray = [3, 7, 1, 2, 6, 9, 3];
 
-let inputArray = [3, 7, 1, 2, 6, 9, 3];
-let R = 5;
+// let max2 = findMax2(inputArray);
 
-let closestElement = findClosestToR(inputArray, R);
-
-if (closestElement !== undefined) {
-    console.log("Massiv elementlari orasidan" + R + "ga eng yaqin son: " + closestElement);
-} else {
-    console.log('Massiv bo\'sh.');
-}
+// if (max2 !== undefined) {
+//     console.log(`Massivning elementlari orasidan yig'indisi eng katta bo'lgan 2 ta qo'shni: ${max2}`);
+// } else {
+//     console.log('Massivda kamida ikkita element bo\'lishi kerak.');
+// }
