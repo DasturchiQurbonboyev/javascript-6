@@ -368,3 +368,56 @@
 // let inputArray = [3, 7, 1, 2, 6, 9, 3, 2, 8, 5, 6, 9];
 
 // let duplicateIndices = array(inputArray);
+
+
+
+
+
+// Array 19
+
+
+
+
+
+// function findMostFrequentValue(arr) {
+//     let frequencyMap = {};
+//     let mostFrequentValue;
+//     let maxFrequency = 0;
+
+//     for (let i = 0; i < arr.length; i++) {
+//         let currentValue = arr[i];
+//         frequencyMap[currentValue] = (frequencyMap[currentValue] || 0) + 1;
+
+//         if (frequencyMap[currentValue] > maxFrequency) {
+//             mostFrequentValue = currentValue;
+//             maxFrequency = frequencyMap[currentValue];
+//         }
+//     }
+
+//     if (maxFrequency > 1) {
+//         return {
+//             value: mostFrequentValue,
+//             frequency: maxFrequency
+//         };
+//     } else {
+//         return "Massivda eng ko'p qatnashgan bir xil qiymatli element topilmadi.";
+//     }
+// }
+
+// let inputArray = [3, 7, 1, 2, 6, 9, 3, 2, 8, 5, 6, 9, 3, 2, 3, 3];
+
+// let result = findMostFrequentValue(inputArray);
+
+// console.log(result);
+
+
+
+
+
+
+
+// Array 20
+
+
+
+
