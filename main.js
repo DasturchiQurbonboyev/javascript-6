@@ -322,9 +322,7 @@
 
 
 // function findMax2(arr) {
-//     if (arr.length < 2) {
-//         return undefined; 
-//     }
+
 
 //     let max1 = arr[0] + arr[1]; 
 //     let max2 = [arr[0], arr[1]]; 
@@ -345,8 +343,28 @@
 
 // let max2 = findMax2(inputArray);
 
-// if (max2 !== undefined) {
-//     console.log(`Massivning elementlari orasidan yig'indisi eng katta bo'lgan 2 ta qo'shni: ${max2}`);
-// } else {
-//     console.log('Massivda kamida ikkita element bo\'lishi kerak.');
+// console.log(`Massivning elementlari orasidan yig'indisi eng katta bo'lgan 2 ta qo'shni: ` + max2);
+
+
+
+
+
+
+// Array 18
+
+
+// function array(arr) {
+
+//     for (let i = 0; i < arr.length; i++) {
+//         for (let j = i + 1; j < arr.length; j++) {
+//             if (arr[i] === arr[j]) {
+//                 console.log(i, j);
+//             }
+//         }
+//     }
+
 // }
+
+// let inputArray = [3, 7, 1, 2, 6, 9, 3, 2, 8, 5, 6, 9];
+
+// let duplicateIndices = array(inputArray);
