@@ -621,3 +621,222 @@
 
 
 
+// function teskariTartib(arr) {
+//     let n = arr.length;
+//     for (let i = 0; i < n / 2; i++) {
+//         let temp = arr[i];
+//         arr[i] = arr[n - 1 - i];
+//         arr[n - 1 - i] = temp;
+//     }
+// }
+
+// let massiv = [1, 2, 3, 4, 5];
+// console.log("Boshlang'ich massiv:", massiv);
+
+// teskariTartib(massiv);
+
+// console.log("Teskari tartibda joylashtirilgan massiv:", massiv);
+
+
+
+
+
+// Array 24
+
+
+
+
+// function minMaxOzgarishsiz(arr) {
+//     let minIndex = 0;
+//     let maxIndex = 0;
+//     let n = arr.length;
+
+//     for (let i = 1; i < n; i++) {
+//         if (arr[i] < arr[minIndex]) {
+//             minIndex = i;
+//         } else if (arr[i] > arr[maxIndex]) {
+//             maxIndex = i;
+//         }
+//     }
+
+//     let temp = arr[minIndex];
+//     arr[minIndex] = arr[maxIndex];
+//     arr[maxIndex] = temp;
+// }
+
+// let massiv = [3, 1, 4, 2, 5];
+// console.log("Boshlang'ich massiv:", massiv);
+
+// minMaxOzgarishsiz(massiv);
+
+// console.log("Eng kichik va eng katta elementlar o'zgarishsiz qoldirilgan massiv:", massiv);
+
+
+
+
+
+
+// Array 25
+
+
+
+
+// function chapgaSiklikSiljituvchi(arr) {
+//     let  n = arr.length;
+
+//     let  lastElement = arr[n - 1];
+
+//     for (let  i = n - 1; i > 0; i--) {
+//         arr[i] = arr[i - 1];
+//     }
+
+//     arr[0] = lastElement;
+// }
+
+// let  massiv = [1, 2, 3, 4, 5];
+// console.log("Boshlang'ich massiv:", massiv);
+
+// chapgaSiklikSiljituvchi(massiv);
+
+// console.log("Massivning chapga siklik siljitilgan holda joylashtirilgan natija:", massiv);
+
+
+
+
+
+
+
+// Array 26
+
+
+
+// function deleteElementWithIndex(arr, k) {
+//     var n = arr.length;
+
+//     if (k < 0 || k >= n) {
+//         console.log("Xatolik: Noto'g'ri k qiymati");
+//         return arr;
+//     }
+
+//     arr.splice(k, 1);
+
+//     return arr;
+// }
+
+// var massiv = [1, 2, 3, 4, 5];
+// var k = 2; 
+// console.log("Boshlang'ich massiv:", massiv);
+
+// var natija = deleteElementWithIndex(massiv, k);
+
+// console.log(`Indeksi` + k  `ga teng bo'lgan element o'chirilgan natija:`, natija);
+
+
+
+
+
+
+// Array 27
+
+
+
+
+
+
+// function deleteElementsBetweenIndices(arr, k, m) {
+//     let n = arr.length;
+
+//     if (k <= 0 || m <= k || m >= n) {
+//         console.log("Xatolik: Noto'g'ri k yoki m qiymatlari");
+//         return arr;
+//     }
+
+//     arr.splice(k, m - k );
+
+//     return arr;
+// }
+
+// let massiv = [1, 2, 3, 4, 5, 6, 7, 8];
+// let k = 2; 
+// let m = 5; 
+// console.log("Boshlang'ich massiv:", massiv);
+
+// let natija = deleteElementsBetweenIndices(massiv, k, m);
+
+// console.log(`Indeksi` + k + ` dan ` + m + ` gacha bo'lgan elementlar o'chirilgan natija:`, natija);
+
+
+
+
+
+// Array 28
+
+
+
+
+
+// function ochirishQoshni(arr) {
+//     let n = arr.length;
+//     let birinchiQoshni = arr[0];
+//     let qoshniQiymati = birinchiQoshni % 10; 
+
+    
+//     for (let i = 1; i < n; i++) {
+//         if (arr[i] % 10 === qoshniQiymati) {
+//             arr.splice(i, 1);
+//             break; 
+//         }
+//     }
+
+//     return arr;
+// }
+
+// let massiv = [23, 56, 89, 45, 15, 45];
+// console.log("Boshlang'ich massiv:", massiv);
+
+// let natija = ochirishQoshni(massiv);
+
+// console.log("Massivdan bir xil qo'shni o'chirilgan natija:", natija);
+
+
+
+
+
+// Array 29
+
+
+
+
+function getElementsOneTime(arr) {
+    var frequencyMap = {};
+    var result = [];
+
+    // Massivni elementlari bo'yicha sanash
+    for (var i = 0; i < arr.length; i++) {
+        var currentElement = arr[i];
+
+        // Sanash kartasiga elementni qo'shish
+        if (frequencyMap[currentElement] === undefined) {
+            frequencyMap[currentElement] = 1;
+        } else {
+            frequencyMap[currentElement]++;
+        }
+    }
+
+    // Faqat bir marta ishtirok etgan elementlarni tanlash
+    for (var key in frequencyMap) {
+        if (frequencyMap.hasOwnProperty(key) && frequencyMap[key] === 1) {
+            result.push(parseInt(key));
+        }
+    }
+
+    return result;
+}
+
+// Test qilish uchun
+var massiv = [1, 5, 6, 1, 5, 7, 2];
+console.log("Boshlang'ich massiv:", massiv);
+
+var natija = getElementsOneTime(massiv);
+
+console.log("Faqat bir marta ishtirok etgan elementlardan iborat yangi massiv:", natija);
